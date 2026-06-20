@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "gallery"
+    label: "معرض الصور"
+    folder: "data/gallery"
+    create: true
+    fields:
+      - {label: "الصورة", name: "image", widget: "image"}
+      - {label: "وصف الصورة", name: "alt", widget: "string"}
+
+  - name: "testimonials"
+    label: "آراء العملاء"
+    folder: "data/testimonials"
+    create: true
+    fields:
+      - {label: "الاسم", name: "name", widget: "string"}
+      - {label: "النص", name: "text", widget: "text"}
+      - {label: "التقييم", name: "stars", widget: "number", default: 5, min: 1, max: 5}
+
+  - name: "faq"
+    label: "الأسئلة الشائعة"
+    folder: "data/faq"
+    create: true
+    fields:
+      - {label: "السؤال", name: "question", widget: "string"}
+      - {label: "الجواب", name: "answer", widget: "text"}
