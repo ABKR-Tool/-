@@ -163,19 +163,49 @@
   </p>
   <p style="font-size:.75em;margin-top:12px">ساعات العمل: ٩ صباحاً - ١١ مساءًالموقع تحت التطوير</p>
 </footer><script>
-const images=[
-  "https://images.unsplash.com/photo-1518831959646-742e2e3b2b4b?w=400",
-  "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400",
-  "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400",
-  "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400",
-  "https://images.unsplash.com/photo-1621786030484-4c855eed6974?w=300",
-  "https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?w=500",
-  "https://images.unsplash.com/photo-1612335225048-cfffdccb43c8?w=350",
-  "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=300",
-  "https://images.unsplash.com/photo-1566174058851-62df3da6b65b?w=450",
-  "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=400",
-  "https://images.unsplash.com/photo-1519238425857-d6922ed0ae81?w=300",
-  "https://images.unsplash.com/photo-1551024507-7ea3ece1b3c5?w=500"
+  // === المعرض الديناميكي (يقرأ من مجلد data/gallery) ===
+const GITHUB_REPO = 'ABKR-Tool/-';
+const GALLERY_FOLDER = 'data/gallery';
+
+async function fetchGallery() {
+  try {
+    const response = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${GALLERY_FOLDER}`);
+    const files = await response.json();
+    const galleryContainer = document.getElementById('gallery-container');
+    galleryContainer.innerHTML = ''; // تنظيف المعرض
+
+    for (const file of files) {
+      if (file.name.endsWith('.md')) {
+        const mdResponse = await fetch(file.download_url);
+        const mdText = await mdResponse.text();
+        
+        // استخراج رابط الصورة ووصفها من ملف Markdown
+        const imageMatch = mdText.match(/image:\s*(.+)/);
+        const altMatch = mdText.match(/alt:\s*(.+)/);
+        
+        if (imageMatch) {
+          const imgUrl = imageMatch[1].trim();
+          const altText = altMatch ? altMatch[1].trim() : 'فساتين بنتي تالين';
+          
+          const el = document.createElement('img');
+          el.src = imgUrl;
+          el.alt = altText;
+          el.loading = 'lazy';
+          el.onclick = () => {
+            document.getElementById('lightbox-img').src = imgUrl;
+            document.getElementById('lightbox').classList.add('active');
+          };
+          galleryContainer.appendChild(el);
+        }
+      }
+    }
+  } catch (error) {
+    console.error('خطأ في تحميل المعرض:', error);
+  }
+}
+
+// استدعاء الدالة عند تحميل الصفحة
+fetchGallery();
 ];
 const catsData=[
   {title:"فساتين المناسبات",img:images[0]},
