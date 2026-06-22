@@ -192,7 +192,11 @@ async function fetchGallery() {
         const altMatch = mdText.match(/alt:\s*"?(.+?)"?\s*$/m);
         
         if (imageMatch) {
-          const imgUrl = imageMatch[1].trim();
+          let imgUrl = imageMatch[1].trim();
+// إذا الرابط ما يبدأ بـ http، فهو اسم ملف مرفوع في Netlify
+if (!imgUrl.startsWith('http')) {
+  imgUrl = 'https://comfy-duckanoo-c07b37.netlify.app/images/' + imgUrl;
+}
           const altText = altMatch ? altMatch[1].trim() : 'فساتين بنتي تالين';
           imageUrls.push(imgUrl);
           
