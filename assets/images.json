@@ -1,0 +1,20 @@
+{
+  "hero": "assets/hero-1.jpg",
+  "categories": {
+    "1": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=500",
+    "2": "https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?q=80&w=500",
+    "3": "https://images.unsplash.com/photo-1519763698-24f37d9c5f3d?q=80&w=500",
+    "4": "https://images.unsplash.com/photo-1595777712802-cee0a0e45ffe?q=80&w=500"
+  },
+  "season_background": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1200",
+  "gallery": {
+    "1": "https://images.unsplash.com/photo-1546015720-b8b30df5aa27?q=80&w=400",
+    "2": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=400",
+    "3": "https://i.imgpeek.com/bG7E2C3cHi6o",
+    "4": "https://i.imgpeek.com/A_9AJ8gr78jC",
+    "5": "https://images.unsplash.com/photo-1595777712802-cee0a0e45ffe?q=80&w=400",
+    "6": "https://images.unsplash.com/photo-1575866225915-e9d29f03e23e?q=80&w=400"
+  },
+  "lightbox_default": "https://i.imgpeek.com/KcBquUceWFOv",
+  "notes": "This file centralizes image URLs used by aa.html. To make aa.html load images from this manifest, I can update the HTML to read this JSON and set src attributes. If you want actual image files committed, provide the files and I'll add them under assets/images/."
+}
