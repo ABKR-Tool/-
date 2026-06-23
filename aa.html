@@ -6,7 +6,7 @@
     <title>بنتي تالين - فساتين بنات مارينا مول</title>
     
     <!-- تحسينات محركات البحث (SEO) -->
-    <meta name="description" content="تشكيلة مميزة وفاخرة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل[...]
+    <meta name="description" content="تشكيلة مميزة وفاخرة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل[...]">
     <meta name="keywords" content="فساتين بنات, فساتين مناسبات, مارينا مول, فساتين أفراح اطفال, بنتي تالين">
     
     <!-- Open Graph (فيسبوك وواتساب) -->
@@ -124,7 +124,7 @@
 
         /* 2. القسم الأول - Hero Section */
         .hero {
-            padding: 160px 0 80px 0;
+            padding: 140px 0 60px 0;
             background: linear-gradient(135deg, var(--bg-pure) 0%, var(--bg-pink) 100%);
             position: relative;
             text-align: center;
@@ -144,10 +144,12 @@
             50% { transform: translateY(-20px) rotate(180deg); }
         }
 
+        /* تعديل شكل الصورة الرئيسية: لم يعد دائريًا، أصبح مستطيلاً متجاوبًا */
         .hero-img {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
+            width: 100%;
+            max-width: 760px; /* حد أقصى مناسب لعرض hero */
+            height: auto;
+            border-radius: 14px;
             object-fit: cover;
             margin: 0 auto 30px auto;
             border: 4px solid var(--gold);
@@ -155,7 +157,7 @@
         }
 
         .hero h1 {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             color: var(--text-dark);
             margin-bottom: 20px;
             line-height: 1.3;
@@ -166,9 +168,9 @@
         }
 
         .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 35px auto;
+            font-size: 1.1rem;
+            max-width: 720px;
+            margin: 0 auto 25px auto;
             color: #666;
             line-height: 1.6;
         }
@@ -575,7 +577,7 @@
             .item-info { padding: 8px; flex-direction: column; align-items: flex-start; gap: 4px; }
             .item-title { font-size: 0.85rem; }
             .item-price { font-size: 0.85rem; }
-            .hero-img { width: 180px; height: 180px; }
+            .hero-img { width: 100%; height: auto; max-width: 320px; border-radius: 10px; }
         }
     </style>
 </head>
@@ -602,7 +604,7 @@
         <div class="circle-bg" style="width: 150px; height: 150px; bottom: 10%; left: 5%; animation-delay: 2s;"></div>
         
         <div class="container">
-            <img src="assets/hero-1.jpg" alt="فستان بنتي تالين رئيسي" class="hero-img" loading="lazy">
+            <img src="assets/hero-1.jpg" alt="بنتي تالين - صورة المتجر" class="hero-img" loading="lazy">
             <h1>أناقة صغيرة... <br><span>بتفاصيل كبيرة</span></h1>
             <p>تشكيلة مميزة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل مارينا مول.</p>
             
@@ -685,17 +687,17 @@
                         <span class="item-price">320 ر.س</span>
                     </div>
                 </div>
-                <!-- عنصر 3 -->
+                <!-- عنصر 3 (مستبدل) -->
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?q=80&w=400" alt="فستان أنيق 3" loading="lazy">
+                    <img src="https://i.imgpeek.com/bG7E2C3cHi6o" alt="صورة بديلة 1" loading="lazy">
                     <div class="item-info">
                         <span class="item-title">فستان منقوش</span>
                         <span class="item-price">280 ر.س</span>
                     </div>
                 </div>
-                <!-- عنصر 4 -->
+                <!-- عنصر 4 (مستبدل) -->
                 <div class="gallery-item" onclick="openLightbox(this)">
-                    <img src="https://images.unsplash.com/photo-1519763698-24f37d9c5f3d?q=80&w=400" alt="فستان أنيق 4" loading="lazy">
+                    <img src="https://i.imgpeek.com/A_9AJ8gr78jC" alt="صورة بديلة 2" loading="lazy">
                     <div class="item-info">
                         <span class="item-title">فستان ستان</span>
                         <span class="item-price">300 ر.س</span>
@@ -831,7 +833,7 @@
         <div class="container">
             <h2 class="section-title">موقعنا</h2>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.7490352088936!2d46.67567!3d24.77486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ2J[...]
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.7490352088936!2d46.67567!3d24.77486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ2JzI4Lj[...]
             </div>
             <h3>مارينا مول - الرياض</h3>
             <p style="font-size: 1.1rem; margin: 15px 0; color: #666;">
