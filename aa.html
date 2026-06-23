@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بنتي تالين - فساتين بنات مارينا مول</title>
+    
+    <!-- تحسينات محركات البحث (SEO) -->
+    <meta name="description" content="تشكيلة مميزة وفاخرة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل مارينا مول. أناقة صغيرة بتفاصيل كبيرة.">
+    <meta name="keywords" content="فساتين بنات, فساتين مناسبات, مارينا مول, فساتين أفراح اطفال, بنتي تالين">
+    
+    <!-- Open Graph (فيسبوك وواتساب) -->
+    <meta property="og:title" content="بنتي تالين - فساتين بنات مارينا مول">
+    <meta property="og:description" content="أناقة صغيرة... بتفاصيل كبيرة. تشكيلة مميزة وفاخرة من فساتين البنات للمناسبات.">
+    <meta property="og:type" content="website">
+    
+    <!-- الخطوط من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- تنسيقات الـ CSS -->
+    <style>
+        :root {
+            --bg-pure: #fffafc;
+            --bg-pink: #fff0f3;
+            --gold: #d4af37;
+            --gold-dark: #b89324;
+            --text-dark: #2d2d2d;
+            --whatsapp-color: #25D366;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-pure);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cairo', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 0.95rem;
+        }
+
+        /* 1. الشريط العلوي الثابت (Header) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 250, 252, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+        .logo span { color: var(--gold); }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        /* 2. القسم الأول - Hero Section */
+        .hero {
+            padding: 160px 0 80px 0;
+            background: linear-gradient(135deg, var(--bg-pure) 0%, var(--bg-pink) 100%);
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* دوائر ذهبية متحركة */
+        .circle-bg {
+            position: absolute;
+            border: 2px solid rgba(212, 175, 55, 0.15);
+            border-radius: 50%;
+            animation: float 8s infinite ease-in-out;
+            pointer-events: none;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .hero-img {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px auto;
+            border: 4px solid var(--gold);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .hero h1 span {
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 35px auto;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-gold-outline {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--text-dark);
+        }
+        .btn-gold-outline:hover { background: var(--gold); color: white; }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+            color: white;
+            animation: pulse-green 2s infinite;
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--text-dark);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        /* 3. قسم الإحصائيات السريع */
+        .stats {
+            padding: 40px 0;
+            background: var(--white);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            color: #777;
+            font-size: 0.95rem;
+        }
+
+        /* العنوان العام للأقسام */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--gold);
+        }
+
+        /* 4. القسم الثاني - التصنيفات */
+        .categories { padding: 80px 0; }
+        .grid-2x2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .cat-card {
+            position: relative;
+            height: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            cursor: pointer;
+        }
+
+        .cat-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .cat-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .cat-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 25px;
+        }
+
+        .cat-overlay h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+
+        /* 5. القسم الثالث - تشكيلة الموسم */
+        .season-section {
+            padding: 100px 0;
+            background: linear-gradient(rgba(255,250,252,0.8), rgba(255,240,243,0.8)), url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1200') center/cover;
+            backdrop-filter: blur(8px);
+            text-align: center;
+        }
+
+        .season-box {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            padding: 50px 30px;
+            border-radius: 20px;
+            display: inline-block;
+            max-width: 600px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+        }
+
+        /* 6. القسم الرابع - معرض الصور */
+        .gallery-section { padding: 80px 0; background-color: var(--white); }
+        
+        .masonry-gallery {
+            column-count: 2;
+            column-gap: 20px;
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+            cursor: pointer;
+            position: relative;
+            background: var(--bg-pink);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            transition: transform 0.4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .item-info {
+            padding: 15px;
+            background: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item-title { font-weight: bold; font-size: 1rem; }
+        .item-price { color: var(--gold); font-weight: 700; }
+
+        /* 7. الـ Lightbox المطور */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(5px);
+            z-index: 2000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .lightbox-content {
+            background: var(--white);
+            border-radius: 20px;
+            max-width: 450px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            animation: zoomIn 0.3s ease;
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .lightbox-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .lightbox-details {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .lightbox-price {
+            font-size: 1.8rem;
+            color: var(--gold);
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .lightbox-status {
+            color: #25D366;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* 8. القسم الخامس - لماذا نحن */
+        .why-us { padding: 80px 0; }
+        
+        .why-card {
+            background: var(--white);
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(212,175,55,0.1);
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 { margin-bottom: 10px; font-size: 1.2rem; }
+        .why-card p { color: #777; font-size: 0.9rem; line-height: 1.5; }
+
+        /* 9. القسم السادس - آراء العملاء */
+        .reviews { padding: 80px 0; background-color: var(--white); }
+        .reviews-slider {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-bottom: 20px;
+            scrollbar-width: none; /* لإخفاء شريط التمرير */
+        }
+        .reviews-slider::-webkit-scrollbar { display: none; }
+
+        .review-card {
+            flex: 0 0 300px;
+            scroll-snap-align: start;
+            background: var(--bg-pure);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid var(--bg-pink);
+        }
+
+        .stars { color: var(--gold); margin-bottom: 15px; }
+        .review-text { font-size: 0.95rem; color: #555; line-height: 1.6; margin-bottom: 15px; min-height: 70px; }
+        .review-name { font-weight: bold; font-size: 0.9rem; color: var(--text-dark); }
+
+        /* 10. القسم السابع - الأسئلة الشائعة */
+        .faq { padding: 80px 0; }
+        .faq-max { max-width: 700px; margin: 0 auto; }
+        
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: var(--white);
+            transition: background 0.3s;
+        }
+
+        .faq-question::after {
+            content: '＋';
+            color: var(--gold);
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '－';
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px 20px;
+            max-height: 200px;
+        }
+
+        /* 11. القسم الثامن - الموقع والخريطة */
+        .map-section { padding: 80px 0; background: var(--white); text-align: center; }
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .work-hours { margin: 20px 0; font-weight: 500; }
+
+        /* 12. زر واتساب عائم */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp-color);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 999;
+            font-size: 30px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        /* 13. الفوتر */
+        footer {
+            background-color: var(--text-dark);
+            color: #bbb;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer h3 { color: var(--gold); margin-bottom: 10px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin: 20px 0; }
+        .footer-links a:hover { color: var(--white); }
+
+        /* التوافق التام مع الجوال */
+        @media (max-width: 768px) {
+            .nav-links { display: none; } /* يمكن إضافة قائمة برجر برغبتك، تم تبسيطها هنا للجوال */
+            .hero h1 { font-size: 2rem; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .grid-2x2 { grid-template-columns: 1fr; gap: 15px; }
+            .masonry-gallery { column-count: 2; }
+            .section-title { font-size: 1.8rem; }
+        }
+
+        @media (max-width: 480px) {
+            .masonry-gallery { column-count: 2; column-gap: 10px; }
+            .gallery-item { margin-bottom: 10px; }
+            .item-info { padding: 8px; flex-direction: column; align-items: flex-start; gap: 4px; }
+            .item-title { font-size: 0.85rem; }
+            .item-price { font-size: 0.85rem; }
+            .hero-img { width: 180px; height: 180px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. الشريط العلوي الثابت -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">بنتي <span>تالين</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#categories">التصنيفات</a></li>
+                <li><a href="#gallery">المعرض</a></li>
+                <li><a href="#why-us">لماذا نحن</a></li>
+                <li><a href="#reviews">الآراء</a></li>
+                <li><a href="#map">الموقع</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 2. القسم الأول - Hero Section -->
+    <section id="hero" class="hero">
+        <div class="circle-bg" style="width: 100px; height: 100px; top: 15%; right: 10%;"></div>
+        <div class="circle-bg" style="width: 150px; height: 150px; bottom: 10%; left: 5%; animation-delay: 2s;"></div>
+        
+        <div class="container">
+            <img src="https://images.unsplash.com/photo-1546015720-b8b30df5aa27?q=80&w=300" alt="فستان بنتي تالين رئيسي" class="hero-img" loading="lazy">
+            <h1>أناقة صغيرة... <br><span>بتفاصيل كبيرة</span></h1>
+            <p>تشكيلة مميزة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل مارينا مول.</p>
+            
+            <div class="hero-btns">
+                <a href="#gallery" class="btn btn-gold-outline">مشاهدة التشكيلة</a>
+                <a href="https://wa.me/966543062286?text=السلام%20عليكم،%20أرغب%20بالاستفسار%20عن%20الموديلات%20المعروضة" target="_blank" class="btn btn-whatsapp">💬 واتساب</a>
+                <a href="#map" class="btn btn-white">📍 موقع المحل</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. قسم الإحصائيات السريع -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item"><h3>+500</h3><p>موديل راقٍ</p></div>
+            <div class="stat-item"><h3>+1000</h3><p>عميل سعيد</p></div>
+            <div class="stat-item"><h3>100%</h3><p>خامات عالية</p></div>
+            <div class="stat-item"><h3>📍</h3><p>مارينا مول</p></div>
+        </div>
+    </section>
+
+    <!-- 4. القسم الثاني - التصنيفات -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">تصنيفاتنا</h2>
+            <div class="grid-2x2">
+                <!-- تصنيف 1 -->
+                <div class="cat-card" onclick="document.getElementById('gallery').scrollIntoView();">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=500" alt="فساتين المناسبات" loading="lazy">
+                    <div class="cat-overlay"><h3>فساتين المناسبات</h3></div>
+                </div>
+                <!-- تصنيف 2 -->
+                <div class="cat-card" onclick="document.getElementById('gallery').scrollIntoView();">
+                    <img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?q=80&w=500" alt="فساتين الأفراح" loading="lazy">
+                    <div class="cat-overlay"><h3>فساتين الأفراح</h3></div>
+                </div>
+                <!-- تصنيف 3 -->
+                <div class="cat-card" onclick="document.getElementById('gallery').scrollIntoView();">
+                    <img src="https://images.unsplash.com/photo-1519763698-24f37d9c5f3d?q=80&w=500" alt="فساتين الأعياد" loading="lazy">
+                    <div class="cat-overlay"><h3>فساتين الأعياد</h3></div>
+                </div>
+                <!-- تصنيف 4 -->
+                <div class="cat-card" onclick="document.getElementById('gallery').scrollIntoView();">
+                    <img src="https://images.unsplash.com/photo-1595777712802-cee0a0e45ffe?q=80&w=500" alt="تصاميم حديثة" loading="lazy">
+                    <div class="cat-overlay"><h3>تصاميم حديثة</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. القسم الثالث - تشكيلة الموسم -->
+    <section class="season-section">
+        <div class="container">
+            <div class="season-box">
+                <h2 class="section-title">تشكيلة الموسم</h2>
+                <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 25px;">احصلي على أحدث الموديلات والتصاميم العالمية بأسعار منافسة</p>
+                <a href="#gallery" class="btn btn-gold-outline">اكتشفي المزيد</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. القسم الرابع - معرض الصور -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">معرض الأعمال</h2>
+            <div class="masonry-gallery">
+                <!-- عنصر 1 -->
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1546015720-b8b30df5aa27?q=80&w=400" alt="فستان أنيق 1" loading="lazy">
+                    <div class="item-info">
+                        <span class="item-title">فستان بروكار</span>
+                        <span class="item-price">250 ر.س</span>
+                    </div>
+                </div>
+                <!-- عنصر 2 -->
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=400" alt="فستان أنيق 2" loading="lazy">
+                    <div class="item-info">
+                        <span class="item-title">فستان حفلات</span>
+                        <span class="item-price">320 ر.س</span>
+                    </div>
+                </div>
+                <!-- عنصر 3 -->
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1621184455862-c163dfb30e0f?q=80&w=400" alt="فستان أنيق 3" loading="lazy">
+                    <div class="item-info">
+                        <span class="item-title">فستان منقوش</span>
+                        <span class="item-price">280 ر.س</span>
+                    </div>
+                </div>
+                <!-- عنصر 4 -->
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1519763698-24f37d9c5f3d?q=80&w=400" alt="فستان أنيق 4" loading="lazy">
+                    <div class="item-info">
+                        <span class="item-title">فستان ستان</span>
+                        <span class="item-price">300 ر.س</span>
+                    </div>
+                </div>
+                <!-- عنصر 5 -->
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1595777712802-cee0a0e45ffe?q=80&w=400" alt="فستان أنيق 5" loading="lazy">
+                    <div class="item-info">
+                        <span class="item-title">فستان مزخرف</span>
+                        <span class="item-price">290 ر.س</span>
+                    </div>
+                </div>
+                <!-- عنصر 6 -->
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="https://images.unsplash.com/photo-1575866225915-e9d29f03e23e?q=80&w=400" alt="فستان أنيق 6" loading="lazy">
+                    <div class="item-info">
+                        <span class="item-title">فستان كلاسيكي</span>
+                        <span class="item-price">270 ر.س</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox للمنتجات -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-details">
+                <h3 id="lightbox-title">عنوان المنتج</h3>
+                <div class="lightbox-price" id="lightbox-price">السعر</div>
+                <p class="lightbox-status">✅ متوفر الآن</p>
+                <a href="https://wa.me/966543062286?text=أنا مهتمة بهذا الفستان" target="_blank" class="btn btn-whatsapp" style="width: 100%; margin-top: 15px;">اطلبي الآن عبر واتساب</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. القسم الخامس - لماذا نحن -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <h2 class="section-title">لماذا نحن؟</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div class="why-card">
+                    <div class="why-icon">👗</div>
+                    <h3>تصاميم حصرية</h3>
+                    <p>موديلات فريدة وحصرية لا تجدينها في مكان آخر</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">✨</div>
+                    <h3>خامات عالية</h3>
+                    <p>نستخدم أفخم الخامات والأقمشة المستوردة</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">💰</div>
+                    <h3>أسعار منافسة</h3>
+                    <p>أفضل الأسعار مع جودة عالية وضمان الرضا</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🎯</div>
+                    <h3>خدمة سريعة</h3>
+                    <p>استجابة فورية لجميع استفساراتك واحتياجاتك</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">📦</div>
+                    <h3>توصيل آمن</h3>
+                    <p>توصيل سريع وآمن مع تتبع الطلبية</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">💎</div>
+                    <h3>موقع مميز</h3>
+                    <p>محل في أفخم مول بالمدينة - مارينا مول</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. القسم السادس - آراء العملاء -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">آراء العملاء</h2>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"خدمة رائعة وفساتين جميلة جداً! ابنتي كانت سعيدة جداً بالتصميم والجودة. سأتردد عليهم مجدداً"</p>
+                    <p class="review-name">- أم محمد</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"أفضل محل لفساتين البنات! الموديلات حديثة والأسعار معقولة جداً. ممتازون في الخدمة"</p>
+                    <p class="review-name">- أم علي</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"التصاميم حصرية والخامات عالية الجودة. استحق كل فلس! شكراً لكم على الخدمة المتميزة"</p>
+                    <p class="review-name">- أم سارة</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"محل رائع ومميز جداً! الموظفات طيبات وودودات والفساتين تستحق كل المدح"</p>
+                    <p class="review-name">- أم لينا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. القسم السابع - الأسئلة الشائعة -->
+    <section class="faq">
+        <div class="container faq-max">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-item">
+                <div class="faq-question">هل هناك توصيل خارج المدينة؟</div>
+                <div class="faq-answer">نعم، نوفر خدمة توصيل آمنة وسريعة إلى جميع أنحاء المملكة مع تتبع الطلبية</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">هل يمكن تعديل التصميم حسب الطلب؟</div>
+                <div class="faq-answer">نعم بالتأكيد! نقدم خدمة تصميم حسب الطلب والرغبة. تواصلي معنا عبر الواتساب</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">ما سياسة الاسترجاع؟</div>
+                <div class="faq-answer">لدينا سياسة استرجاع سهلة وآمنة. يمكنك استرجاع المنتج خلال 7 أيام من الشراء</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">كيف أتواصل معكم؟</div>
+                <div class="faq-answer">يمكنك التواصل معنا عبر الواتساب أو زيارة متجرنا مباشرة في مارينا مول</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. القسم الثامن - الموقع والخريطة -->
+    <section id="map" class="map-section">
+        <div class="container">
+            <h2 class="section-title">موقعنا</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.7490352088936!2d46.67567!3d24.77486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ2JzI4LjciTiA0NsKwNDAnMzUuMiJF!5e0!3m2!1sen!2ssa!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <h3>مارينا مول - الرياض</h3>
+            <p style="font-size: 1.1rem; margin: 15px 0; color: #666;">
+                📍 شارع العليا، مارينا مول<br>
+                📞 +966-54-306-2286<br>
+                🕐 مفتوح يومياً من 10 صباحاً إلى 11 مساءً
+            </p>
+            <div class="work-hours">
+                <p><strong>ساعات العمل:</strong><br>السبت - الخميس: 10 صباحاً - 11 مساءً<br>الجمعة: 2 مساءً - 11 مساءً</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- زر واتساب عائم -->
+    <a href="https://wa.me/966543062286?text=السلام%20عليكم،%20أرغب%20بالاستفسار%20عن%20الفساتين" target="_blank" class="whatsapp-float">💬</a>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <h3>بنتي تالين</h3>
+            <p>متجر فساتين بنات في مارينا مول - الرياض</p>
+            <div class="footer-links">
+                <a href="#hero">الرئيسية</a>
+                <a href="#categories">التصنيفات</a>
+                <a href="#gallery">المعرض</a>
+                <a href="#reviews">الآراء</a>
+                <a href="#map">الموقع</a>
+            </div>
+            <p style="margin-top: 30px; font-size: 0.85rem;">© 2024 بنتي تالين. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // فتح الـ Lightbox
+        function openLightbox(element) {
+            const img = element.querySelector('img');
+            const title = element.querySelector('.item-title').textContent;
+            const price = element.querySelector('.item-price').textContent;
+            
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-title').textContent = title;
+            document.getElementById('lightbox-price').textContent = price;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        
+        // إغلاق الـ Lightbox
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+        
+        // إغلاق الـ Lightbox عند الضغط خارجه
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+        
+        // تفعيل الأسئلة الشائعة
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const item = this.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
