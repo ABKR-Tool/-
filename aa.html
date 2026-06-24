@@ -852,7 +852,50 @@
 
     <!-- زر واتساب عائم -->
     <a href="https://wa.me/966562399039?text=السلام%20عليكم،%20أرغب%20بالاستفسار%20عن%20الفساتين" target="_blank" class="whatsapp-float">💬</a>
+هل<!-- ضع المقطع التالي مباشرة قبل </body> -->
 
+<style>
+/* تيك توك - زر عائم مُنفصل وآمن (مخصص للإنهاء) */
+.tiktok-float{
+    position: fixed;
+    bottom: 30px;
+    right: 100px; /* غير القيمة لو أردت موضعًا مختلفًا */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index: 999;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    text-decoration: none;
+    border: none;
+    background: radial-gradient(circle at 30% 25%, #69C9D0 0%, #69C9D0 28%, #EE1D52 28%, #EE1D52 58%, #000 58%, #000 100%);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+/* بسيطة للتفاعل */
+.tiktok-float:hover{ transform: translateY(-6px); box-shadow: 0 10px 28px rgba(0,0,0,0.25); }
+
+/* داخلية الأيقونة */
+.tiktok-float svg{ width: 28px; height: 28px; display:block; }
+</style>
+
+<!-- زر تيك توك العائم -->
+<a href="https://www.tiktok.com/@your_handle" target="_blank" rel="noopener noreferrer"
+   class="tiktok-float" aria-label="تيك توك @your_handle" title="تابعنا على تيك توك">
+  <!-- أيقونة بسيطة بطبقات تلوين تشبه شعار تيك توك (مضمّنة لا تحتاج موارد خارجية) -->
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <!-- ظل أفتح -->
+    <path d="M14.2 3.2c-.1 0-.2 0-.3.1-1.7.6-2.9 2.2-2.9 4v6.2c0 2.3-1.9 4.2-4.2 4.2-2.3 0-4.2-1.9-4.2-4.2S4.5 9.6 6.8 9.6c.6 0 1.2.1 1.8.3V7.1c0-.2.1-.4.3-.5.1-.1.3-.1.4 0 1.1.6 2.4.9 3.6.9V3.2h.4z" fill="#69C9D0"/>
+    <!-- ظل غامق -->
+    <path d="M15 3.2v6.4c-1.2 0-2.3-.3-3.3-.9v3.2c0 .5-.1 1-.3 1.4-.4.9-1.3 1.5-2.4 1.5-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5c.3 0 .6 0 .9.1V9.1c-.6-.2-1.2-.3-1.8-.3-2.3 0-4.2 1.9-4.2 4.2S6.5 17 8.8 17c1.4 0 2.6-.8 3.1-2 .1-.3.2-.6.2-1V7.6c1 .7 2.1 1 3.3 1V3.2h-0.2z" fill="#000"/>
+    <!-- لمسة حمراء فوقية -->
+    <path d="M14.2 3.2c-.1 0-.2 0-.3.1v6.2c1 .6 2.1.9 3.3.9v-4.5c-1.1 0-2.1-.3-3-1.1z" fill="#EE1D52" opacity="0.95"/>
+  </svg>
+</a>
+
+<!-- نهاية المقطع: استبدل your_handle باسم حسابك (مثل: username بدون @) -->
     <!-- الفوتر -->
     <footer>
         <div class="container">
