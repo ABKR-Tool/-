@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    google-site-verification: google499851a66d03aeb0.html
+    <meta name="google-site-verification" content="google499851a66d03aeb0.html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>بنتي تالين - فساتين بنات مارينا مول</title>
     
     <!-- تحسينات محركات البحث (SEO) -->
-    <meta name="description" content="تشكيلة مميزة وفاخرة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل مارينا مول - الرياض.">
+    <meta name="description" content="تشكيلة مميزة وفاخرة من فساتين البنات للمناسبات والأفراح والأعياد بأحدث الموديلات داخل مارينا مول">
     <meta name="keywords" content="فساتين بنات, فساتين مناسبات, مارينا مول, فساتين أفراح اطفال, بنتي تالين">
     
     <!-- Open Graph (فيسبوك وواتساب) -->
@@ -148,7 +148,7 @@
         /* تعديل شكل الصورة الرئيسية: لم يعد دائريًا، أصبح مستطيلاً متجاوبًا */
         .hero-img {
             width: 100%;
-            max-width: 760px; /* حد أقصى مناسب لعرض hero */
+            max-width: 760px;
             height: auto;
             border-radius: 14px;
             object-fit: cover;
@@ -451,7 +451,7 @@
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             padding-bottom: 20px;
-            scrollbar-width: none; /* لإخفاء شريط التمرير */
+            scrollbar-width: none;
         }
         .reviews-slider::-webkit-scrollbar { display: none; }
 
@@ -553,7 +553,37 @@
             100% { transform: scale(1); }
         }
 
-        /* 13. الفوتر */
+        /* 13. زر TikTok عائم */
+        .tiktok-float {
+            position: fixed;
+            bottom: 30px;
+            right: 100px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+            text-decoration: none;
+            border: none;
+            background: radial-gradient(circle at 30% 25%, #69C9D0 0%, #69C9D0 28%, #EE1D52 28%, #EE1D52 58%, #000 58%, #000 100%);
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+        }
+
+        .tiktok-float:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+        }
+
+        .tiktok-float svg {
+            width: 28px;
+            height: 28px;
+            display: block;
+        }
+
+        /* 14. الفوتر */
         footer {
             background-color: var(--text-dark);
             color: #bbb;
@@ -566,7 +596,7 @@
 
         /* التوافق التام مع الجوال */
         @media (max-width: 768px) {
-            .nav-links { display: none; } /* يمكن إضافة قائمة برجر برغبتك، تم تبسيطها هنا للجوال */
+            .nav-links { display: none; }
             .hero h1 { font-size: 2rem; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .grid-2x2 { grid-template-columns: 1fr; gap: 15px; }
@@ -613,7 +643,7 @@
             
             <div class="hero-btns">
                 <a href="#gallery" class="btn btn-gold-outline">مشاهدة التشكيلة</a>
-                <a href="https://wa.me/966562399039?text=السلام%20عليكم،%20أرغب%20بالاستفسار%20عن%20الموديلات%20المعروضة" target="_blank" class="btn btn-whatsapp">استفسار واتساب</a>
+                <a href="https://wa.me/966562399039?text=السلام%20عليكم،%20أرغب%20بالاستفسار%20عن%20الموديلات%20المعروضة" target="_blank" class="btn btn-whatsapp">💬 واتساب</a>
                 <a href="#map" class="btn btn-white">📍 موقع المحل</a>
             </div>
         </div>
@@ -663,7 +693,7 @@
         <div class="container">
             <div class="season-box">
                 <h2 class="section-title">تشكيلة الموسم</h2>
-                <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 25px;">احصلي على أحدث الموديلات والتصاميم العالمية بأسعار منافسة وخدمة ممتازة في المتجر.</p>
+                <p style="font-size: 1.1rem; color: var(--text-dark); margin-bottom: 25px;">احصلي على أحدث الموديلات والتصاميم العالمية بأسعار منافسة</p>
                 <a href="#gallery" class="btn btn-gold-outline">اكتشفي المزيد</a>
             </div>
         </div>
@@ -690,7 +720,7 @@
                         <span class="item-price">320 ر.س</span>
                     </div>
                 </div>
-                <!-- عنصر 3 (مستبدل) -->
+                <!-- عنصر 3 -->
                 <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://i.imgpeek.com/bG7E2C3cHi6o" alt="صورة بديلة 1" loading="lazy">
                     <div class="item-info">
@@ -698,7 +728,7 @@
                         <span class="item-price">280 ر.س</span>
                     </div>
                 </div>
-                <!-- عنصر 4 (مستبدل) -->
+                <!-- عنصر 4 -->
                 <div class="gallery-item" onclick="openLightbox(this)">
                     <img src="https://i.imgpeek.com/A_9AJ8gr78jC" alt="صورة بديلة 2" loading="lazy">
                     <div class="item-info">
@@ -786,7 +816,7 @@
             <div class="reviews-slider">
                 <div class="review-card">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="review-text">"خدمة رائعة وفساتين جميلة جداً! ابنتي كانت سعيدة جداً بالتصميم والجودة. سأتردد عليهم مرة أخرى."</p>
+                    <p class="review-text">"خدمة رائعة وفساتين جميلة جداً! ابنتي كانت سعيدة جداً بالتصميم والجودة. سأتردد عليهم مجدداً"</p>
                     <p class="review-name">- أم محمد</p>
                 </div>
                 <div class="review-card">
@@ -842,60 +872,24 @@
             <p style="font-size: 1.1rem; margin: 15px 0; color: #666;">
                 📍 شارع العليا، مارينا مول<br>
                 📞 +966-562-399-039<br>
-                🕐 مفتوح  يوميا إلى 11 مساء 
+                🕐 مفتوح يوميا إلى 11 مساء 
             </p>
             <div class="work-hours">
-                <p><strong>ساعات العمل:</strong><br>السبت - الخميس من 5 إلى - 11 مساءً<br>الجمعة: 5 مساءً - 11 مساءً</p>
+                <p><strong>ساعات العمل:</strong><br>السبت - الخميس من 5 إلى 11 مساءً<br>الجمعة: 5 مساءً - 11 مساءً</p>
             </div>
         </div>
     </section>
 
     <!-- زر واتساب عائم -->
     <a href="https://wa.me/966562399039?text=السلام%20عليكم،%20أرغب%20بالاستفسار%20عن%20الفساتين" target="_blank" class="whatsapp-float">💬</a>
-هل<!-- ضع المقطع التالي مباشرة قبل </body> -->
 
-<style>
-/* تيك توك - زر عائم مُنفصل وآمن (مخصص للإنهاء) */
-.tiktok-float{
-    position: fixed;
-    bottom: 30px;
-    right: 100px; /* غير القيمة لو أردت موضعًا مختلفًا */
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    z-index: 999;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-    text-decoration: none;
-    border: none;
-    background: radial-gradient(circle at 30% 25%, #69C9D0 0%, #69C9D0 28%, #EE1D52 28%, #EE1D52 58%, #000 58%, #000 100%);
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
+    <!-- زر TikTok عائم -->
+    <a href="https://www.tiktok.com/@bentitalen" target="_blank" rel="noopener noreferrer" class="tiktok-float" aria-label="تيك توك بنتي تالين" title="تابعنا على تيك توك">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.66 1.94 2.89 2.89 0 0 1 5.66-1.94v-3.45a6.47 6.47 0 0 0-5.66 5.88 6.47 6.47 0 0 0 9.56 5.64V9.34a8.23 8.23 0 0 0 5.25 1.9v-3.45a4.82 4.82 0 0 1-1.27-.17z"/>
+        </svg>
+    </a>
 
-/* بسيطة للتفاعل */
-.tiktok-float:hover{ transform: translateY(-6px); box-shadow: 0 10px 28px rgba(0,0,0,0.25); }
-
-/* داخلية الأيقونة */
-.tiktok-float svg{ width: 28px; height: 28px; display:block; }
-</style>
-
-<!-- زر تيك توك العائم -->
-<a href="https://www.tiktok.com/@your_handle" target="_blank" rel="noopener noreferrer"
-   class="tiktok-float" aria-label="تيك توك @your_handle" title="تابعنا على تيك توك">
-  <!-- أيقونة بسيطة بطبقات تلوين تشبه شعار تيك توك (مضمّنة لا تحتاج موارد خارجية) -->
-  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-    <!-- ظل أفتح -->
-    <path d="M14.2 3.2c-.1 0-.2 0-.3.1-1.7.6-2.9 2.2-2.9 4v6.2c0 2.3-1.9 4.2-4.2 4.2-2.3 0-4.2-1.9-4.2-4.2S4.5 9.6 6.8 9.6c.6 0 1.2.1 1.8.3V7.1c0-.2.1-.4.3-.5.1-.1.3-.1.4 0 1.1.6 2.4.9 3.6.9V3.2h.4z" fill="#69C9D0"/>
-    <!-- ظل غامق -->
-    <path d="M15 3.2v6.4c-1.2 0-2.3-.3-3.3-.9v3.2c0 .5-.1 1-.3 1.4-.4.9-1.3 1.5-2.4 1.5-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5c.3 0 .6 0 .9.1V9.1c-.6-.2-1.2-.3-1.8-.3-2.3 0-4.2 1.9-4.2 4.2S6.5 17 8.8 17c1.4 0 2.6-.8 3.1-2 .1-.3.2-.6.2-1V7.6c1 .7 2.1 1 3.3 1V3.2h-0.2z" fill="#000"/>
-    <!-- لمسة حمراء فوقية -->
-    <path d="M14.2 3.2c-.1 0-.2 0-.3.1v6.2c1 .6 2.1.9 3.3.9v-4.5c-1.1 0-2.1-.3-3-1.1z" fill="#EE1D52" opacity="0.95"/>
-  </svg>
-</a>
-
-<!-- نهاية المقطع: استبدل your_handle باسم حسابك (مثل: username بدون @) -->
     <!-- الفوتر -->
     <footer>
         <div class="container">
@@ -939,11 +933,9 @@
             if (lb) lb.style.display = 'none';
         }
 
-        // expose for inline handlers
         window.openLightbox = openLightbox;
         window.closeLightbox = closeLightbox;
 
-        // Overlay click to close (click outside content)
         const lbOverlay = document.getElementById('lightbox');
         if (lbOverlay) {
             lbOverlay.addEventListener('click', function(e) {
@@ -951,7 +943,6 @@
             });
         }
 
-        // FAQ toggles
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', function() {
                 const item = this.parentElement;
