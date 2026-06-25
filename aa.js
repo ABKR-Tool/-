@@ -58,7 +58,7 @@ function openLightbox(item) {
     lightboxPrice.textContent = item.price;
 
     // تجهيز نص رسالة الواتساب المخصصة باسم الفستان وسعره للطلب المباشر
-    const whatsappBase = "https://wa.me/966551523499";
+    const whatsappBase = "https://wa.me/966562399039";
     const messageText = `مرحباً بنتي تالين، أود الاستفسار عن فستان: (${item.title}) المعروض بسعر (${item.price})، هل هو متوفر حالياً؟`;
     lightboxOrderBtn.href = `${whatsappBase}?text=${encodeURIComponent(messageText)}`;
 
