@@ -3,7 +3,7 @@
 const dressImages = [
     {
         id: 1,
-        title: "فستان الأميرات ",
+        title: "فستان الأميرات",
         price: "350 ر.س",
         category: "wedding",
         src: "https://j.top4top.io/p_38267vpy11.jpg"
@@ -42,41 +42,40 @@ const dressImages = [
         price: "260 ر.س",
         category: "soft",
         src: "https://a.top4top.io/p_3829ii99p1.jpg"
-     },
-     {
+    },
+    {
         id: 7,
         title: "فستان بربطات خلفية",
-        price: "200ر.س",
+        price: "200 ر.س",
         category: "wedding",
         src: "https://e.top4top.io/p_38295d5wq1.jpg"
-     },
+    },
     {
-    id: 7,
-    title: "فستان دانتيل ناعم بربطات خلفية",
-    price: "350ر.س",
-    category: "wedding",
-    src: "https://e.top4top.io/p_38295d5wq1.jpg"
-},
-  {
-    id: 8,
-    title: "فستان ملكي بقصة كلاسيك",
-    price: "420ر.س",
-    category: "wedding",
-    src: "https://g.top4top.io/p_38299bolk1.jpg"
-},
-{
-    id: 9,
-    title: "فستان أميري بتطريزات لؤلؤية",
-    price: "480ر.س",
-    category: "wedding",
-    src: "https://d.top4top.io/p_3829qwqqs1.jpg"
-},
-{
-    id: 10,
-    title: "فستان زفاف بقصة أطفال أنيقة",
-    price: "280ر.س",
-    category: "wedding",
-    src: "https://c.top4top.io/p_38299g9aq1.jpg"    
-}'
-
-];
+        id: 11,   // ← تم تغيير المعرف من 7 إلى 11
+        title: "فستان دانتيل ناعم بربطات خلفية",
+        price: "350 ر.س",
+        category: "wedding",
+        src: "https://e.top4top.io/p_38295d5wq1.jpg"
+    },
+    {
+        id: 8,
+        title: "فستان ملكي بقصة كلاسيك",
+        price: "420 ر.س",
+        category: "wedding",
+        src: "https://g.top4top.io/p_38299bolk1.jpg"
+    },
+    {
+        id: 9,
+        title: "فستان أميري بتطريزات لؤلؤية",
+        price: "480 ر.س",
+        category: "wedding",
+        src: "https://d.top4top.io/p_3829qwqqs1.jpg"
+    },
+    {
+        id: 10,
+        title: "فستان زفاف بقصة أطفال أنيقة",
+        price: "280 ر.س",
+        category: "wedding",
+        src: "https://c.top4top.io/p_38299g9aq1.jpg"
+    }
+];  // ← تم إغلاق المصفوفة بشكل صحيح
